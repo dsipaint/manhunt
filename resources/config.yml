@@ -1,0 +1,7 @@
+whitelist_time_change_msg: '&4&lManhunt &e&l> &r&bWhitelisting time changed to &a<time>.'
+whitelist_time_change_err_msg: '&4&lManhunt &e&l> &r&cIncorrect command syntax- timer was set to default value of 30m.'
+timer_toggle_msg: '&4&lManhunt &e&l> &r&bTimer toggled &a<onoff>.'
+kick_msg: '&4&lManhunt<break>&rYou died- better luck next time!'
+bypass_true_msg: '&4&lManhunt &e&l> &r&bPlayer &a<player> &bwill be placed in spectator mode upon death.'
+bypass_false_msg: '&4&lManhunt &e&l> &r&bPlayer &a<player> &bwill be kicked upon death.'
+player_not_joined_err: '&4&lManhunt &e&l> &r&cError: Player must have joined the game in order to be bypassed.'

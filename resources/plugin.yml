@@ -1,0 +1,32 @@
+name: Manhunt
+version: 1.0
+author: finlay.woolfson@gmail.com
+main: com.fin.main.Main
+description: A plugin to randomly whitelist users to a server, and remove them from the whitelist upon death.
+
+commands:
+   settimer:
+      description: changes the interval for which users are whitelisted
+   
+   toggletimer:
+      description: toggles the whitelist timer
+   
+   bypass:
+      description: puts the target into spectator mode on death, rather than removing them from the whitelist
+
+permissions:
+
+   manhunt.*:
+      description: gives access to all plugin permissions
+      default: op
+      children:
+         whitelistdeath.changetimer: true
+         whitelistdeath.bypass: true
+         
+   manhunt.changetimer:
+      description: allows the interval for which users are whitelisted to be changed
+      default: op
+      
+   manhunt.bypass:
+      description: allows users to "bypass" other users- upon death, the target is put into spectator mode rather than removed from the whitelist
+      default: op
