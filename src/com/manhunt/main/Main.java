@@ -22,10 +22,11 @@ public class Main extends JavaPlugin
 	static final String PREFIX = ">";
 	
 	/*
-	 * v1.1 CHANGELOG:
+	 * v2.1 CHANGELOG:
 	 * 
-	 * Moved whitelisting to its own plugin for versatility. This plugin simply checks against that
-	 * data and bypasses users in a separate table
+	 * Being killed by a mob caused a problem because the server would try to tick the player/mob
+	 * when they were kicked/unwhitelisted on death- this crashed the server. To fix this, I scheduled
+	 * these as a task called PlayerKickTask, which is scheduled on death. This seemed to fix it.
 	 * 
 	 */
 	

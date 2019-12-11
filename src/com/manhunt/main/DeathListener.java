@@ -35,14 +35,9 @@ public class DeathListener implements Listener
 			results.absolute(1); //first entry
 			
 			if(Data.getResultSize(results) > 0)
-			{
 				p.setGameMode(GameMode.SPECTATOR);
-			}
 			else
-			{
-				p.kickPlayer(utils.Chat.format(plugin.getConfig().getString("kick_msg").replace("<break>", "\n")));
-				p.setWhitelisted(false);
-			}
+				new PlayerKickTask(plugin, p).runTask(plugin);
 		}
 		catch (SQLException e1)
 		{

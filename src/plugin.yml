@@ -1,5 +1,5 @@
 name: Manhunt
-version: 2.0
+version: 2.1
 author: finlay.woolfson@gmail.com
 main: com.manhunt.main.Main
 description: Works with whitelister.jar- unwhitelists people on death unless they have been bypassed.
