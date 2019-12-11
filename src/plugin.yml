@@ -1,0 +1,21 @@
+name: Manhunt
+version: 2.1
+author: finlay.woolfson@gmail.com
+main: com.manhunt.main.Main
+description: Works with whitelister.jar- unwhitelists people on death unless they have been bypassed.
+
+commands:   
+   bypass:
+      description: puts the target into spectator mode on death, rather than removing them from the whitelist
+
+permissions:
+
+   manhunt.*:
+      description: gives access to all plugin permissions
+      default: op
+      children:
+         manhunt.bypass: true
+      
+   manhunt.bypass:
+      description: allows users to "bypass" other users- upon death, the target is put into spectator mode rather than removed from the whitelist
+      default: op

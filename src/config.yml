@@ -1,0 +1,3 @@
+kick_msg: '&4&lManhunt<break>&rYou died- better luck next time!'
+bypass_true_msg: '&4&lManhunt &e&l> &r&bPlayer &a<player> &bwill be placed in spectator mode upon death.'
+bypass_false_msg: '&4&lManhunt &e&l> &r&bPlayer &a<player> &bwill be kicked upon death.'
